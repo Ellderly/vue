@@ -1,14 +1,82 @@
-import { createStore } from 'vuex'
+import {createStore} from "vuex";
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+export default createStore( {
+    state: () => ({
+        productListTest: [
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-2.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 500,
+                filterName: 1,
+                id: 1,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 600,
+                filterName: 1,
+                id: 2,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 3,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-2.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 4,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 5,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 6,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 7,
+                amount: 1
+            },
+            {name: 'Филадельфия',
+                image: require('@/assets/sushi-1.png'),
+                text: 'лосось, икра, огурец, унаги, крабовые палочки, кетчуп, майонез, палец сани, и так далее ебал писать много но тут должно быть норм так написано.',
+                weight: '800',
+                price: 400,
+                filterName: 1,
+                id: 8,
+                amount: 1
+            }
+        ],
+        newProductList: [],
+        newProductPrice: 0,
+    }),
 })
